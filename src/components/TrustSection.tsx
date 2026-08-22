@@ -1,4 +1,4 @@
-import { ShieldCheck, Award, Lock, Server } from 'lucide-react';
+import { ShieldCheck, Award } from 'lucide-react';
 
 export default function TrustSection() {
   const compliance = [

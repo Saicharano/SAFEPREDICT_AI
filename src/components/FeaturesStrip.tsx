@@ -1,4 +1,4 @@
-import { Zap, ShieldAlert, Cpu, Activity, Database, CheckCircle2, Eye, LineChart } from 'lucide-react';
+import { Zap, ShieldAlert, Cpu, LineChart } from 'lucide-react';
 
 export default function FeaturesStrip() {
   const features = [

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Calendar, Sparkles, ShieldAlert, Cpu, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Calendar, Sparkles, ShieldAlert } from 'lucide-react';
 
 export default function HeroSection() {
   return (

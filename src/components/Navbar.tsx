@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Shield, ChevronRight, Activity } from 'lucide-react';
+import { Shield, ChevronRight } from 'lucide-react';
 
 export default function Navbar() {
   return (

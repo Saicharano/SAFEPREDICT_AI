@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Calendar, Sparkles, ShieldAlert } from 'lucide-react';
+import { ArrowRight, Settings2, Sparkles, ShieldAlert, LayoutDashboard } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -43,19 +43,20 @@ export default function HeroSection() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 pt-2">
               <Link
-                href="#trial"
+                href="/dashboard"
                 className="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Start Free Trial</span>
+                <LayoutDashboard className="mr-2 w-4 h-4" />
+                <span>Open Command Center</span>
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
 
               <Link
-                href="#demo"
+                href="/analyzer"
                 className="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800/90 border border-slate-700/80 hover:border-blue-500/40 rounded-xl transition-all backdrop-blur-md"
               >
-                <span>Book a Demo</span>
-                <Calendar className="ml-2 w-4 h-4 text-blue-400" />
+                <Settings2 className="mr-2 w-4 h-4 text-blue-400" />
+                <span>Run AI Risk Analyzer</span>
               </Link>
             </div>
 
@@ -79,7 +80,7 @@ export default function HeroSection() {
 
           {/* Right Dashboard Column */}
           <div className="lg:col-span-6 relative z-10">
-            <div className="relative mx-auto max-w-lg lg:max-w-none group">
+            <Link href="/dashboard" className="block relative mx-auto max-w-lg lg:max-w-none group cursor-pointer">
               
               {/* Subtle Blue Glow Behind Image */}
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition duration-1000" />
@@ -97,7 +98,7 @@ export default function HeroSection() {
                   </div>
                   <div className="flex items-center space-x-2 text-[10px] font-mono text-blue-400 bg-blue-950/50 px-2 py-0.5 rounded border border-blue-800/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping" />
-                    <span>LIVE AI FEED</span>
+                    <span>CLICK TO OPEN LIVE APP</span>
                   </div>
                 </div>
 
@@ -109,7 +110,7 @@ export default function HeroSection() {
                     width={800}
                     height={550}
                     priority
-                    className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.01]"
+                    className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.02]"
                   />
 
                   {/* Floating Glassmorphic Alert Pill Badge Overlay */}
@@ -129,7 +130,7 @@ export default function HeroSection() {
                 </div>
 
               </div>
-            </div>
+            </Link>
           </div>
 
         </div>

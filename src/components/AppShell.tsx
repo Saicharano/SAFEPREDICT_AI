@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Activity, BarChart3, Gauge, History, Search, Settings2, ShieldCheck, Siren, Wrench } from "lucide-react";
 
 const navItems = [
-  { href: "/", label: "Command Center", icon: Gauge },
+  { href: "/dashboard", label: "Command Center", icon: Gauge },
   { href: "/risk-priority", label: "Risk Priority", icon: Siren },
   { href: "/sensor-intelligence", label: "Sensors", icon: Activity },
   { href: "/maintenance", label: "Maintenance", icon: Wrench },
